@@ -8,7 +8,7 @@ public class ResponseCustomer extends Response {
     List<Customers> data;
 
     public ResponseCustomer(String status, int statusCode, String message, List<Customers> customersList) {
-        super(status, statusCode, message, null);
+        super(status, statusCode, message);
         this.data = customersList;
     }
 

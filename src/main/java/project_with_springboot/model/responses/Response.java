@@ -5,7 +5,7 @@ public class Response {
   private int statusCode;
   private String message;
 
-  public Response(String status, int statusCode, String message, String jwt) {
+  public Response(String status, int statusCode, String message) {
     this.status = status;
     this.statusCode = statusCode;
     this.message = message;

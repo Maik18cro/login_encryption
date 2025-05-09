@@ -27,9 +27,8 @@ public class Main {
     return new Response(
             "success",
             200,
-            "User registered successfully",
-            null
-              );
+            "User registered successfully"
+    );
   }
 
 
