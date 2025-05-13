@@ -27,7 +27,7 @@ public class AuthenticationControlers {
   public static final String keyServer = "siiiuu1234567890 123456789012 3456789012";
 
 
-  @PostMapping("/login")
+  @PostMapping("/register")
   @ResponseBody
   public String Authentication(@RequestParam String user, @RequestParam String pass) throws UnsupportedEncodingException {
 
@@ -58,7 +58,8 @@ public class AuthenticationControlers {
             + "\n" + "response of the authentication on the application : "
             + "\n" + verification(passEncoded, nameEncoded).getStatus()
             + "\n" + verification(passEncoded, nameEncoded).getStatusCode()
-            + "\n" + verification(passEncoded, nameEncoded).getMessage();
+            + "\n" + verification(passEncoded, nameEncoded).getMessage()
+            + "FormsAuthentication";
   }
 
   public SecretKey key() {
